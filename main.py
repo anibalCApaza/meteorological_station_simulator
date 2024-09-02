@@ -17,7 +17,10 @@ app.resizable(False, False)
 
 
 def button_function():
-    print("button pressed")
+    if len(token_input.get()) == 50:
+        message_input
+    else:
+        message_input = "MUNDO"
 
 
 def clear_token():
@@ -119,6 +122,16 @@ token_clear_button = customtkinter.CTkButton(
     hover_color="orange",
 )
 token_clear_button.place(x=470, y=300)
+
+
+# Mensaje
+message_value = StringVar(value="................")
+message_input = customtkinter.CTkLabel(
+    app,
+    textvariable=message_value,
+    text_color="green",
+)
+message_input.place(x=15, y=400)
 
 
 button2 = customtkinter.CTkButton(
