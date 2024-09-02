@@ -18,7 +18,7 @@ app.resizable(False, False)
 
 def button_function():
     if len(token_input.get()) == 50:
-        message_input
+        message_input.
     else:
         message_input = "MUNDO"
 
