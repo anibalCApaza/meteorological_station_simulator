@@ -77,7 +77,7 @@ def button_function():
 
             response = requests.put(URL, params=params)
 
-            print(f'Status Code: {response.status_code}')
+            print(f'{i} - Status Code: {response.status_code}')
 
             try:
                 print(f'Response: {response.json()}')
@@ -85,6 +85,7 @@ def button_function():
                 print('Response is not in JSON format')
 
             time.sleep(5)
+            i = i + 1
 
     else:
         message_input.configure(
